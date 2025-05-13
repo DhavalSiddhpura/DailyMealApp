@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "670841261519",
+    "project_id": "dailymeal-11fac",
+    "storage_bucket": "dailymeal-11fac.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:670841261519:android:fe5f098437a79c74ac96ba",
+        "android_client_info": {
+          "package_name": "com.example.dailymeal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBF99cLWOlhbxEcJJulahKTvZ-NhuFh3tM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

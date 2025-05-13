@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/orderHistoryContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="40dp">
+
+        <!-- Back Button ImageView -->
+        <ImageView
+            android:id="@+id/backtohome"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/circle_background"
+            android:contentDescription="Back to Home"
+            android:padding="12dp"
+            android:src="@drawable/baseline_arrow_back_24" />
+
+        <!-- CardViews will be added dynamically below -->
+
+    </LinearLayout>
+
+</ScrollView>

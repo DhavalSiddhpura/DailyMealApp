@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#FFF8F5">
+
+    <!-- Logo at the Top -->
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:src="@drawable/main_logo"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Welcome Message and Buttons -->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appLogo"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <!-- Welcome Text -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to\nDaily Meal Management"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="40dp" />
+
+        <!-- Register Button -->
+        <Button
+            android:id="@+id/register_b"
+            android:layout_width="250dp"
+            android:layout_height="65dp"
+            android:text="Register"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#F27517"
+            android:layout_marginBottom="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:textColor="@color/black"
+            android:textSize="19dp"/>
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/login_b"
+            android:layout_width="250dp"
+            android:layout_height="65dp"
+            android:text="Login"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#F27517"
+    />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Designed and Developed By\n          Dhaval Siddhpura"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="22dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="60dp"/>
+
+</RelativeLayout>

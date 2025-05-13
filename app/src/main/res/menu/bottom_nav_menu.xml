@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_dashboard"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/nav_meals"
+        android:icon="@drawable/baseline_restaurant_menu_24"
+        android:title="Meals" />
+
+
+    <item
+        android:id="@+id/nav_orders"
+        android:icon="@drawable/food_courier"
+        android:title="Orders Cart" />
+
+    <item
+        android:id="@+id/nav_subscription"
+        android:icon="@drawable/baseline_monetization_on_24"
+        android:title="Subscription" />
+
+
+    <item
+        android:id="@+id/nav_contactus"
+        android:icon="@drawable/baseline_contact_support_24"
+        android:title="Contact US" />
+
+</menu>

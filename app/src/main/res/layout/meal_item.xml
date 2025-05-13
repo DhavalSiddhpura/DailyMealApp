@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="16dp"
+            app:cardBackgroundColor="#F6F3B1"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Meal Image -->
+                <ImageView
+                    android:id="@+id/imgMeal"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop" />
+
+                <!-- Meal Name with Icon -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="15dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/menu_name"
+                        android:paddingLeft="10dp" />
+
+                    <TextView
+                        android:id="@+id/tvMealName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Meal Name"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:paddingStart="8dp" />
+                </LinearLayout>
+
+                <!-- Description with Icon -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/menu_description"
+                        android:paddingLeft="10dp" />
+
+                    <TextView
+                        android:id="@+id/tvMealDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Meal Description"
+                        android:textSize="18sp"
+                        android:textColor="#0C2F64"
+                        android:paddingStart="8dp" />
+                </LinearLayout>
+
+                <!-- Meal Type and Day with Icon -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/time"
+                        android:paddingLeft="10dp" />
+
+                    <TextView
+                        android:id="@+id/tvMealTypeDay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lunch - Monday"
+                        android:textSize="15sp"
+                        android:textColor="#8E1616"
+                        android:paddingStart="8dp" />
+                </LinearLayout>
+
+                <!-- Price with Icon -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:src="@drawable/currency" />
+
+                    <TextView
+                        android:id="@+id/tvMealPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="5dp"
+                        android:text="80"
+                        android:textColor="#0EAF19"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!-- Quantity Controls Container (TOGGLABLE) -->
+                <LinearLayout
+                    android:id="@+id/quantityLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:gravity="center">
+
+                    <!-- Decrease Button -->
+                    <Button
+                        android:id="@+id/btnDecrease"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textSize="20sp"
+                        android:padding="10dp"
+                        android:backgroundTint="@color/button"
+                        android:textColor="@android:color/white" />
+
+                    <!-- Quantity TextView -->
+                    <TextView
+                        android:id="@+id/tvQuantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:textSize="20sp"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:textColor="@color/black"
+                        android:gravity="center" />
+
+                    <!-- Increase Button -->
+                    <Button
+                        android:id="@+id/btnIncrease"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+"
+                        android:textSize="20sp"
+                        android:padding="10dp"
+                        android:backgroundTint="@color/button"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+
+                <!-- Order Now Button -->
+                <Button
+                    android:id="@+id/btnOrder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Order Cart"
+                    android:textStyle="bold"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/button"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeliveredOrder"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="#FFF8F5">
+
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/main_logo"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20sp"/>
+
+    <!-- Order Status Message -->
+    <TextView
+        android:id="@+id/order_status_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your order is on the way!"
+        android:textSize="23sp"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Estimated Delivery Time -->
+    <TextView
+        android:id="@+id/delivery_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estimated Delivery: 30-45 minutes"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/button"
+        android:gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Icon (Optional) -->
+    <ImageView
+        android:id="@+id/order_delivery_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/food_delivery"
+        android:layout_marginTop="40dp"/>
+
+    <!-- Button to Close or Return to Home -->
+    <Button
+        android:id="@+id/close_order_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Status"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/button"
+        android:layout_marginTop="50dp"/>
+
+</LinearLayout>
